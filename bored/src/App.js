@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Bored from "./components/Bored";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="bg-blue-900 h-screen">
+      <div className="max-w-screen-lg mx-auto bg-indigo-300 rounded-lg text-center">
+        <h1 className="text-5xl lowercase">Are you bored?...</h1>
+        <div className="pb-4">
+          <Bored />
+        </div>
+      </div>
+    </main>
   );
 }
 
